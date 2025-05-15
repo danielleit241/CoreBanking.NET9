@@ -1,0 +1,9 @@
+﻿global using Asp.Versioning;
+global using CoreBanking.Api.Apis;
+global using CoreBanking.Api.Bootstraping;
+global using CoreBanking.Api.Models;
+global using CoreBanking.Api.Services;
+global using CoreBanking.Infrastructure.Data;
+global using CoreBanking.Infrastructure.Entities;
+global using Microsoft.AspNetCore.Http.HttpResults;
+global using Microsoft.EntityFrameworkCore;
