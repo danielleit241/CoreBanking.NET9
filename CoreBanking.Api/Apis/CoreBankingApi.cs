@@ -164,7 +164,7 @@
             }
         }
 
-        private static async Task<Results<Ok<Account>, BadRequest>> Deposit
+        public static async Task<Results<Ok<Account>, BadRequest>> Deposit
             ([AsParameters] CoreBankingServices services,
             Guid id,
             DepositionRequest deposition)
@@ -217,7 +217,7 @@
         }
 
         #region Account
-        private static async Task<Results<Ok<Account>, BadRequest>> CreateAccount
+        public static async Task<Results<Ok<Account>, BadRequest>> CreateAccount
            ([AsParameters] CoreBankingServices services,
             Account account)
         {
@@ -269,7 +269,7 @@
         #endregion
 
         #region Customer
-        private static async Task<Results<Ok<Customer>, BadRequest>> CreateCustomer([AsParameters] CoreBankingServices services,
+        public static async Task<Results<Ok<Customer>, BadRequest>> CreateCustomer([AsParameters] CoreBankingServices services,
             Customer customer)
         {
             if (string.IsNullOrEmpty(customer.Name))
