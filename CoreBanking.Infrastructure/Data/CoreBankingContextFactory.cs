@@ -13,7 +13,7 @@ namespace CoreBanking.Infrastructure.Data
         public CoreBankingDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CoreBankingDbContext>();
-            optionsBuilder.UseNpgsql("Host=localhost;Port=53245;Username=postgres;Password=u4+)Z927P}B(.2ArZn{cP+;Database=corebanking");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=53058;Username=postgres;Password=u4+)Z927P}B(.2ArZn{cP+;Database=corebanking");
             return new CoreBankingDbContext(optionsBuilder.Options);
         }
     }
