@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using CoreBanking.Api.Apis;
 using CoreBanking.Api.Services;
 using CoreBanking.Infrastructure.Data;

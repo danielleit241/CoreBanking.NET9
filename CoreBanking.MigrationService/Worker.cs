@@ -2,9 +2,6 @@ using CoreBanking.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.DependencyInjection;
-using System.Diagnostics;
-using System.Threading;
 
 namespace CoreBanking.MigrationService;
 

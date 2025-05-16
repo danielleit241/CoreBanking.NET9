@@ -1,5 +1,6 @@
 using CoreBanking.Infrastructure.Data;
 using CoreBanking.MigrationService;
+using CoreBanking.ServiceDefaults;
 using Microsoft.EntityFrameworkCore;
 
 var builder = Host.CreateApplicationBuilder(args);

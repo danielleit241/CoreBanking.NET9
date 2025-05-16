@@ -5,14 +5,40 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<UserSecretsId>dotnet-CoreBanking.MigrationService-baed063a-9555-4194-b531-b0a6481372f4</UserSecretsId>
+		<DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Program.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Dockerfile" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\CoreBanking.Infrastructure\CoreBanking.Infrastructure.csproj" />
 		<ProjectReference Include="..\CoreBanking\CoreBanking.ServiceDefaults\CoreBanking.ServiceDefaults.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ApplicationDefinition Include="Dockerfile" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Program.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="..\.dockerignore" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="..\.dockerignore" />
 	</ItemGroup>
 </Project>

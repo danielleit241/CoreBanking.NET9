@@ -1,4 +1,6 @@
 
+using CoreBanking.ServiceDefaults;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddApplicationServices();

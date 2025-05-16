@@ -1,4 +1,6 @@
-﻿namespace CoreBanking.Api.Bootstraping
+﻿using CoreBanking.ServiceDefaults;
+
+namespace CoreBanking.Api.Bootstraping
 {
     public static class ApplicationServiceExtensions
     {
